@@ -121,10 +121,10 @@
   .section {padding-block: var(--section-padding);}
   
   .section-subtitle {
-    color: var(--color-secondary);
+    color: #ab8c31;
     font-family: var(--ff-poppins);
     font-size: var(--fs-6);
-    font-weight: var(--fw-700);
+    /* font-weight: var(--fw-700); */
     text-transform: uppercase;
     margin-block-end: 10px;
   }
@@ -137,10 +137,10 @@
   }
   
   .h1 {
-    /* color: var(--oxford-blue-1); */
     color: var(--color-primary-dark);
-    font-size: var(--fs-2);
+    font-size: var(--fs-3);
     text-transform: uppercase;
+    text-align: center;
   }
   
   .h2,
@@ -148,21 +148,22 @@
     color: var(--color-primary-dark);
   }
   
-  .h2 {font-size: var(--fs-1);}
+  .h2 {font-size: var(--fs-6);}
   
-  .h3 {font-size: var(--fs-5);}
+  .h3 {font-size: var(--fs-7);}
   
   .btn {
-    background-image: linear-gradient( var(--deg, 90deg), var(--color-secondary) 0%, var(--color-primary) 100%);
+    /* background-image: linear-gradient( var(--deg, 90deg), var(--color-secondary) 0%, var(--color-primary) 100%); */
+    background-color: #ac8e33;
     color: var(--white);
     text-transform: uppercase;
-    padding: 20px 30px;
+    padding: 15px 30px;
     text-align: center;
     border-radius: var(--radius-4);
     box-shadow: var(--shadow-4);
   }
   
-  .btn:is(:hover, :focus) { --deg: -90deg; }
+  .btn:is(:hover, :focus) { background-color: var(--color-secondary); }
   
   .w-100 { width: 100%; }
   
@@ -281,7 +282,7 @@
     background-position: center;
     padding-block-end: calc(var(--section-padding) / 2);
   }
-  
+
   .hero-content { margin-block-end: 50px; }
   
   .hero-title { margin-block: 15px 30px; }
@@ -292,10 +293,10 @@
     margin-block-end: 40px;
   }
   
-  .hero-banner img {
+  /* .hero-banner img {
     background-image: linear-gradient( var(--deg, 90deg), var(--color-secondary) 0%, var(--color-primary) 100%);
     border-radius: var(--radius-6);
-  }
+  } */
   
   .hero-form {
     background-color: var(--white);
@@ -339,7 +340,10 @@
     padding: 30px;
   }
   
-  .service-card .card-icon {
+  .service-card .card-icon img {
+    background-color: var(--color-primary);
+    padding: 8px;
+    border-radius: 50%;
     width: 50px;
     flex-shrink: 0;
   }
@@ -370,7 +374,7 @@
   }
   
   /* -----DOCTOR----- */
-  
+
   .doctor .section-title { margin-block-end: 50px; }
   
   .doctor-card .card-banner {
@@ -820,7 +824,7 @@
   
     .header-top {
       display: block;
-      background-color: var(--color-secondary);
+      background-color: #ac8e33;
       color: var(--white);
       padding-block: 20px;
     }
