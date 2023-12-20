@@ -132,14 +132,14 @@
   .h1,
   .h2,
   .h3 {
-    font-family: var(--ff-poppins);
+    font-family: var(--ff-roboto);
     line-height: 1.2;
   }
   
   .h1 {
     color: var(--color-primary-dark);
-    font-size: 3rem;
-    font-weight: 100;
+    font-size: 2.5rem;
+    font-weight: lighter;
     text-transform: uppercase;
     text-align: center;
   }
