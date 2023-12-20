@@ -221,7 +221,6 @@
   }
   
   .logo {
-    background-color: #e6d6be;
     color: var(--oxford-blue-1);
     font-family: var(--ff-poppins);
     font-size: 3.4rem;
@@ -459,7 +458,7 @@
   
   /* -----CTA----- */
   
-  .cta { background-color: var(--color-primary); }
+  .cta { background-color: var(--color-primar); }
   
   .cta-banner { margin-block-end: 50px; }
   
