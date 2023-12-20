@@ -284,7 +284,7 @@
     padding-block-end: calc(var(--section-padding) / 2);
   }
 
-  .hero-content { margin-block-end: 50px; }
+  .hero-content { margin-block-end: 40px; }
   
   .hero-title { margin-block: 15px 30px; }
   
@@ -732,7 +732,8 @@
   
     .hero .container {
       display: grid;
-      grid-template-columns: 1fr 0.75fr;align-items: center;
+      grid-template-columns: 1fr 0.75fr;
+      align-items: center;
       gap: 20px;
     }
   
