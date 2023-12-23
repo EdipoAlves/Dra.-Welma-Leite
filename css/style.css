@@ -295,20 +295,18 @@
     margin-block-end: 30px;
     text-align: center;
   }
-
-  .her
   
   .hero-banner img {
     border: 1px solid var(--black-10);
     background-color: var(--color-primary-light);
     border-radius: var(--radius-6);
-    box-shadow: 10px 10px 5px #ddaa12;
+    box-shadow: 5px 5px 10px #ddaa12;
     /* background-image: linear-gradient( var(--deg, 90deg), var(--color-secondary) 0%, var(--color-primary) 100%);
     border-radius: var(--radius-6); */
   }
   
   .hero-form {
-    background-color: var(--white);
+    background-color: var(--color-primary-light);
     max-width: 95%;
     padding: 14px;
     border-radius: var(--radius-4);
@@ -550,6 +548,37 @@
   .blog-card .card-link:is(:hover, :focus) { color: var(--color-principal); }
   
   .blog-card .card-link:is(:hover, :focus)::after { background-color: var(--color-primary); }
+
+  /* -----MODAL----- */
+
+  .modal { 
+    background-color: var(--color-primary-light); 
+    padding: 15px;
+  }
+
+  .modal h2 {
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: var(--fw-600);
+  }
+
+  .modal details summary {
+    border-bottom: 2px solid var(--color-principal);
+    font-size: 15px;
+    font-weight: var(--fw-600);
+  }
+
+  .modal details p {
+    background-color: var(--color-secondary-light);
+    padding: 15px;
+    border-radius: var(--radius-4);
+    text-align: justify;
+  }
+
+  .modal-banner { margin-block-end: 50px; }
+
+  .modal-banner img {border-radius: var(--radius-6);}
   
   /* -----FOOTER----- */
   
@@ -778,9 +807,9 @@
     /* -----DOCTOR----- */
   
     .scrollbar-item {min-width: calc(50% - 15px);}
-  
+
     /* -----CTA----- */
-  
+
     .cta {padding-block: 0;}
   
     .cta .container {
@@ -797,6 +826,25 @@
     /* -----BLOG----- */
   
     .blog-list {grid-template-columns: 1fr 1fr;}
+
+    /* -----MODAL----- */
+  
+    .modal {padding-block: 0;}
+  
+    .modal .container {
+      padding: 30px ;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 60px;
+    }
+  
+    .modal-banner img {
+      margin-block-end: 0;
+      border-radius: var(--radius-6);
+    }
+  
+    .modal-content {padding-block: 60px;}
   
     /* -----FOOTER----- */
   
@@ -915,7 +963,7 @@
       display: block;
       padding: 15px 20px;
     }
-    
+
     /* -----SERVICE----- */
   
     .service-list { grid-template-columns: repeat(3, 1fr); }
