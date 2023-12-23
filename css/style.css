@@ -738,10 +738,6 @@
     /* -----FOOTER----- */
   
     .footer-top .container {grid-template-columns: 1fr 1fr;}
-  
-  
-  
-  
   }
   
   /* -----768PX SCREEN----- */
@@ -835,7 +831,7 @@
       padding: 30px ;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      align-items: center;
+      align-items: flex-end;
       gap: 60px;
     }
   
@@ -997,6 +993,10 @@
     /* -----BLOG----- */
   
     .blog-list { grid-template-columns: repeat(3, 1fr); }
+
+    /* -----MODAL----- */
+
+    .modla-content { padding-block: 80px; }
   
     /* -----FOOTER----- */
   
@@ -1054,5 +1054,11 @@
     .cta .container { align-items: center; }
   
     .cta-banner { margin-block-start: -120px; }
+
+    /* -----MODAL----- */
+
+    .modal .container { align-items: center; }
+
+    .modal-banner { margin-block-start: -120px; }
   
    }
