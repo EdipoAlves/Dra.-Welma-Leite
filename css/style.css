@@ -567,6 +567,7 @@
     border-bottom: 2px solid var(--color-principal);
     font-size: 15px;
     font-weight: var(--fw-600);
+    cursor: pointer;
   }
 
   .modal details p {
