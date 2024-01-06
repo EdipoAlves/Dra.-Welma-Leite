@@ -122,6 +122,8 @@
   .section {padding-block: var(--section-padding);}
   
   .section-subtitle {
+    background-color: var(--color-primary);
+    border-radius: var(--radius-4);
     color: var(--color-secondary);
     font-family: var(--ff-poppins);
     font-size: var(--fs-6);
@@ -147,6 +149,7 @@
   .h2,
   .h3 {
     color: var(--color-primary-dark);
+    /* font-weight: lighter; */
   }
   
   .h2 {font-size: var(--fs-6);}
@@ -164,7 +167,10 @@
     box-shadow: var(--shadow-4);
   }
   
-  .btn:is(:hover, :focus) { background-color: var(--color-secondary); }
+  .btn:is(:hover, :focus) { 
+    background-color: var(--color-secondary); 
+    color: var(--black);
+  }
   
   .w-100 { width: 100%; }
   
@@ -234,9 +240,9 @@
   }
   
   .nav-toggle-btn {
-    color: var(--black);
+    color: var(--color-principal);
     font-size: 30px;
-    border: 1px solid var(--black);
+    border: 1px solid var(--color-principal);
     padding: 5px;
   }  
   
@@ -560,18 +566,21 @@
 
   .modal { 
     background-color: var(--color-primary-light); 
-    padding: 15px;
+    /* padding: 15px; */
   }
 
   .modal h2 {
-    padding: 15px;
+    padding-bottom: 20px;
     text-align: center;
     font-size: 25px;
     font-weight: var(--fw-600);
   }
 
   .modal details summary {
-    border-bottom: 2px solid var(--color-principal);
+    background-color: var(--color-secondary-light);
+    padding: 5px;
+    border-bottom: 1px solid var(--color-principal);
+    border-radius: 5px 5px 0 0;
     font-size: 15px;
     font-weight: var(--fw-600);
     cursor: pointer;
@@ -580,6 +589,7 @@
   .modal details p {
     background-color: var(--color-secondary-light);
     padding: 15px;
+    margin-bottom: 10px;
     border-radius: var(--radius-4);
     text-align: justify;
   }
