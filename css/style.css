@@ -354,6 +354,12 @@
     border-radius: var(--radius-6);
     padding: 30px;
     text-align: justify;
+    transition: var(--transition);
+  }
+
+  .service-card:is(:hover, :focus-within) { 
+    background-color: var(--color-primary-light);
+    transform: scale(1.1); 
   }
   
   .service-card .card-icon img {
@@ -591,7 +597,7 @@
     background-color: var(--color-secondary-light);
     padding: 15px;
     margin-bottom: 10px;
-    border-radius: var(--radius-4);
+    border-radius: 0 0 5px 5px;
     text-align: justify;
   }
 
