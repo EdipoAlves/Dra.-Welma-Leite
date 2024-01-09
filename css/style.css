@@ -7,6 +7,7 @@
     --color-primary-light:#f7efe3;
     --color-secondary:#af9980;
     --color-secondary-light:#e6d6be;
+    --color-footer:#453c33;
     --light-steel-blue: hsl(218, 33%, 77%);
     --royal-blue-light: hsl(225, 68%, 53%);
     --flickr-blue_30: hsla(225, 68%, 53%, 0.3);
@@ -159,7 +160,7 @@
   
   .btn {
     /* background-image: linear-gradient( var(--deg, 90deg), var(--color-secondary) 0%, var(--color-primary) 100%); */
-    background-color: #ac8e33;
+    background-color: var(--color-principal);
     color: var(--white);
     text-transform: uppercase;
     padding: 15px 30px;
@@ -193,7 +194,6 @@
   
   
   /* -----HEADER----- */
-  
   .header-top,
   .header-bottom .btn {display: none;}
   
@@ -209,7 +209,7 @@
   
   .header-bottom.active {
     position: fixed;
-    top: -81px;
+    top: -85px;
     background-color: var(--white);
     box-shadow: var(--shadow-2);
     animation: slideIn 0.5s var(--cubic-out) forwards;
@@ -618,7 +618,7 @@
   }
   
   .footer-brand .logo {
-    color: var(--black);
+    color: var(--color-footer);
     text-align: center;
   }
   
@@ -646,7 +646,7 @@
   .footer-item .item-text {line-height: 1.6;}
   
   .footer-list-title {
-    color: var(--black);
+    color: var(--color-footer);
     font-family: var(--ff-poppins);
     font-size: var(--fs-4);
     font-weight: var(--fw-500);
