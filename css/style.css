@@ -159,7 +159,6 @@
   .h3 {font-size: var(--fs-7);}
   
   .btn {
-    /* background-image: linear-gradient( var(--deg, 90deg), var(--color-secondary) 0%, var(--color-primary) 100%); */
     background-color: var(--color-principal);
     color: var(--white);
     text-transform: uppercase;
