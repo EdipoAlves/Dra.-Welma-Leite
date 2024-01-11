@@ -480,6 +480,13 @@
   .has-scrollbar::-webkit-scrollbar-button { width: calc(25% - 30px); }
   
   /* -----CTA----- */
+
+  .cta .container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-block-end: calc(var(--section-padding) 1 / 2);
+  }
   
   .cta { background-color: var(--color-primary-light); }
   
@@ -729,6 +736,10 @@
     transform: translateY(-10px);
     visibility: visible;
     opacity: 1;
+  }
+
+  .efeito-h1, .efeito-img-hero, .h2, .efeito-card1, .efeito-card2, .efeito-card3, .efeito-card4, .efeito-card5, .efeito-card6, .efeito-img-sobre, .efeito-txt-sobre {
+    visibility: hidden;
   }
   
   

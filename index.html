@@ -12,6 +12,10 @@
     <!-- CUSTOM CSS LINK -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- LINK SCROLLREVEAL -->
+    <Script src="https://unpkg.com/scrollreveal"></Script>
+    <script src="js/reveal.js" defer></script>
+
     <!-- GOOGLE FONTS LINK -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -117,13 +121,13 @@
    <main>
       <article>
          <!-- -----HERO----- -->
-         <section class="section hero" id="home" tyle="background-image: url(images/bg-home-2.jpg)" aria-label="hero">
+         <section class="section hero" id="home" aria-label="hero">
             <div class="container">
                <div class="hero-content">
                   <p class="section-subtitle text-center">
                      Bem-vindo ao nosso site
                   </p> <!-- section-subtitle -->
-                  <h1 class="h1 hero-title">
+                  <h1 class="h1 hero-title efeito-h1">
                      Somos o melhor serviço odontológico
                   </h1> <!-- hero-title -->
                   <p class="hero-text">
@@ -136,7 +140,7 @@
                      </button> <!-- btn -->
                   </form> <!-- hero-form -->
                </div> <!-- hero-content -->
-               <figure class="hero-banner">
+               <figure class="hero-banner efeito-img-hero">
                   <img src="images/imagem-principal-1.png" width="587" height="839" alt="hero banner" class="w-100">
                </figure> <!-- hero-banner -->
             </div> <!-- container -->
@@ -150,11 +154,11 @@
                   Nossos Serviços
                </p> <!-- section-subtitle text-center -->
                <h2 class="h2 section-title text-center">
-                  O que oferecemos
+                  O que oferecemos?
                </h2> <!-- h2 section-titletext-center -->
                <ul class="service-list" style="background-image: url(images/bg-home-3.jpg)">
                   <li>
-                     <div class="service-card">
+                     <div class="service-card efeito-card1">
                         <div class="card-icon">
                            <img src="images/service-icon-1.png" width="100" height="100" loading="lazy" alt="service icon" class="w-100">
                         </div> <!-- card-icon -->
@@ -169,7 +173,7 @@
                      </div> <!-- service-card -->
                   </li>
                   <li>
-                     <div class="service-card">
+                     <div class="service-card efeito-card2">
                         <div class="card-icon">
                            <img src="images/service-icon-2.png" width="100" height="100" loading="lazy" alt="service icon" class="w-100">
                         </div> <!-- card-icon -->
@@ -184,7 +188,7 @@
                      </div> <!-- service-card -->
                   </li>
                   <li>
-                     <div class="service-card">
+                     <div class="service-card efeito-card3">
                         <div class="card-icon">
                            <img src="images/service-icon-3.png" width="100" height="100" loading="lazy" alt="service icon" class="w-100">
                         </div> <!-- card-icon -->
@@ -204,7 +208,7 @@
                      </figure>
                   </li> <!-- service-banner -->
                   <li>
-                     <div class="service-card">
+                     <div class="service-card efeito-card4">
                         <div class="card-icon">
                            <img src="images/service-icon-4.png" width="100" height="100" loading="lazy" alt="service icon" class="w-100">
                         </div> <!-- card-icon -->
@@ -219,7 +223,7 @@
                      </div> <!-- service-card -->
                   </li>
                   <li>
-                     <div class="service-card">
+                     <div class="service-card efeito-card5">
                         <div class="card-icon">
                            <img src="images/service-icon-5.png" width="100" height="100" loading="lazy" alt="service icon" class="w-100">
                         </div> <!-- card-icon -->
@@ -234,7 +238,7 @@
                      </div> <!-- service-card -->
                   </li>
                   <li>
-                     <div class="service-card">
+                     <div class="service-card efeito-card6">
                         <div class="card-icon">
                            <img src="images/service-icon-6.png" width="100" height="100" loading="lazy" alt="service icon" class="w-100">
                         </div> <!-- card-icon -->
@@ -256,7 +260,7 @@
 
          <section class="section about" id="about" aria-label="about">
             <div class="container">
-               <figure class="about-banner">
+               <figure class="about-banner efeito-img-sobre">
                   <img src="images/imagem-principal-2.png" width="470" height="538" loading="lazy" alt="Dra. Welma Leite." class="w-100">
                </figure> <!-- about-banner -->
                <div class="about-content">
@@ -266,12 +270,12 @@
                   <h2 class="h2 section-title text-center">
                      Cuidamos da sua saúde bucal
                   </h2> <!-- h2 section-title -->
-                  <p class="section-text section-text-1">
+                  <p class="section-text section-text-1 efeito-txt-sobre">
                      Sou uma profissional comprometida e apaixonada pelo cuidado odontológico. Minha <strong>missão</strong> é mais do que um propósito, é uma jornada em direção à transformação das vidas das pessoas. Com um tratamento humanizado e diferenciado, meu foco no paciente é evidenciado através da empatia, conexão e da busca constante pela excelência no atendimento. Para mim, a qualidade dos serviços prestados não é apenas uma meta, mas um compromisso intrínseco que norteia minha prática profissional. <br>
                      Minha visão vai além do presente, refletindo um <strong>compromisso</strong> constante com a evolução e modernização na odontologia. <br>
                      Os meus <strong>valores</strong> são uma base sólida que sustenta minha atuação profissional. Cuidar do paciente não é apenas uma tarefa, mas uma missão que desempenho com integridade e honestidade. Minha capacidade de assumir responsabilidades e manter-me comprometida com os compromissos firmados me destaca como uma profissional confiável. Enfrentar os desafios com determinação é parte integrante de minha postura, revelando uma pessoa que não apenas lida com as adversidades, mas que abraça como oportunidades de crescimento.
                   </p> <!-- section-text section-text1 -->
-                  <p class="section-text section-text-1">
+                  <p class="section-text section-text-1 efeito-txt-sobre">
                      Sou mais do que um profissional da odontologia, sou um guia em uma jornada de saúde bucal, alguém que não só transforma sorrisos, mas também toca os corações daqueles que têm uma espécie de receber meus  cuidados dedicados e compassivos.
                   </p> <!-- section-text -->
                   <a href="https://api.whatsapp.com/send/?phone=5531992813761&text&type=phone_number&app_absent=0" target="_blank" rel="external" class="btn">
@@ -427,8 +431,8 @@
 
          <!-- -----CTA----- -->
 
-         <section class="section cta" aria-label="cta">
-            <div class="container">
+         <section class="section cta">
+            <div class="container" style="background-image: url(images/cta-principal.jpg)" aria-label="cta">
                <figure class="cta-banner">
                   <img src="images/imagem-principal-2.png" width="1056" height="1076" loading="lazy" alt="cta banner" class="w-100">
                </figure> <!-- cta-banner -->
@@ -437,7 +441,7 @@
                      Marcar Consulta Dentária
                   </p> <!-- section-subtitle -->
                   <h2 class="h2 section-title text-center">
-                     Estamos abertos e receptivos aos pacientes
+                     Estamos abertos e receptivos aos pacientes.
                   </h2> <!-- h2 section-title -->
                   <a href="https://api.whatsapp.com/send/?phone=5531992813761&text&type=phone_number&app_absent=0" target="_blank" rel="external" class="btn">
                      Consultoria e Orçamento
