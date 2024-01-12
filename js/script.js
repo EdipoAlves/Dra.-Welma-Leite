@@ -49,4 +49,4 @@ window.addEventListener("scroll", function () {
    }
 });
 
-AOS.init();
+   AOS.init();
