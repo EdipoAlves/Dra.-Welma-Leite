@@ -115,6 +115,7 @@
     background-color: var(--white);
     color: var(--sonic-silver);
     font-size: 1.5rem;
+    overflow-x: hidden;
   }
   
   /* -----REUSED STYLE----- */
@@ -195,7 +196,6 @@
   /* -----HEADER----- */
   .header-top,
   .header-bottom .btn {display: none;}
-  
   
   .header-bottom {
     position: absolute;
@@ -358,7 +358,7 @@
 
   .service-card:is(:hover, :focus-within) { 
     background-color: var(--color-primary-light);
-    transform: scale(1.1); 
+    /* transform: scale(1.1);  */
   }
   
   .service-card .card-icon img {
