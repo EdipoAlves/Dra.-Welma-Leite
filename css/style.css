@@ -307,8 +307,6 @@
     background-color: var(--cultured);
     border-radius: var(--radius-6);
     box-shadow: 5px 5px 10px #ddaa12;
-    /* background-image: linear-gradient( var(--deg, 90deg), var(--color-secondary) 0%, var(--color-primary) 100%);
-    border-radius: var(--radius-6); */
   }
   
   .hero-form {
@@ -349,9 +347,11 @@
     align-items: center;
     gap: 30px;
     min-height: 100%;
+    background-color: transparent;
     border: 1px solid var(--light-gray);
     border-radius: var(--radius-6);
     padding: 30px;
+    backdrop-filter: blur(3px);
     text-align: justify;
     transition: var(--transition);
   }
@@ -379,8 +379,6 @@
     background-color: var(--cultured);
     border-radius: var(--radius-6);
     box-shadow: 5px 5px 10px #ddaa12;
-    /* margin-block-end: 50px;
-    background-image: linear-gradient( var(--deg, 90deg), var(--color-primary) 0%, var(--color-secondary) 100%); */
     border-radius: var(--radius-6);
   }
 
@@ -389,9 +387,8 @@
   .about .section-text-1 { 
     margin-block: 25px 15px;
     text-align: justify;
-    
   }
-  
+
   .about .btn {
     font-size: unset;
     max-width: max-content;
@@ -867,7 +864,7 @@
       grid-template-columns: 1fr 1fr;
       column-gap: 30px;
     }
-  
+
     /* -----DOCTOR----- */
   
     .scrollbar-item {min-width: calc(50% - 15px);}
@@ -945,7 +942,7 @@
   
     .header-top {
       display: block;
-      background-color: #ac8e33;
+      background-color: var(--color-principal);
       color: var(--white);
       padding-block: 20px;
     }
@@ -1014,7 +1011,10 @@
       transition: var(--transition);
     }
   
-    .navbar-link:is(:hover, :focus) { color: var(--color-primary); }
+    .navbar-link:is(:hover, :focus) {
+      color: var(--color-secondary); 
+      transform: scale(1.1);
+    }
   
     .header-bottom .btn {
       display: block;
