@@ -358,7 +358,7 @@
 
   .service-card:is(:hover, :focus-within) { 
     background-color: var(--color-primary-light);
-    /* transform: scale(1.1);  */
+    transform: scale(1.1); 
   }
   
   .service-card .card-icon img {
