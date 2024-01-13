@@ -115,7 +115,7 @@
     background-color: var(--white);
     color: var(--sonic-silver);
     font-size: 1.5rem;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
   
   /* -----REUSED STYLE----- */
