@@ -370,6 +370,94 @@
   }
   
   .service-card .card-title { margin-block-end: 8px; }
+
+  /* SKILLS */
+
+  .especialidades {padding-block-end: 0;}
+
+  .especialidades .section-title {margin-block-end: 50px;}
+
+  .skills {
+    /* background-color: var(--color-secondary-light); */
+    padding: 40px;
+    border-radius: var(--radius-6);
+    box-shadow: var(--shadow-4);
+  }
+  
+  .skills .h3 {
+    color: var(--color-secondary);
+    font-weight: lighter;
+  }
+
+  .skills ul li {
+    margin: 20px 0;
+  }
+
+  .skills .barras {
+    background-color: var(--color-secondary-light);
+    display: block;
+    margin-top: 5px;
+    height: 15px;
+    border-radius: var(--radius-6);
+    position: relative;overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+
+  .barras > span {
+    height: 20px;
+    background: linear-gradient(to right, #d8c586, #caa05a);
+    position: absolute;
+  }
+
+  .clinico-geral {
+    width: 97%;
+    animation: clinico-geral 3s;
+  }
+  .implantodontia {
+    width: 92%;
+    animation: implantodontia 3s;
+  }
+  .odontologia-estetica {
+    width: 95%;
+    animation: odontologia-estetica 3s;
+  }
+  .harmonizacao-facial {
+    width: 97%;
+    animation: harmonizacao-facial 3s;
+  }
+
+  @keyframes clinico-geral {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 97%;
+    }
+  }
+  @keyframes implantodontia {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 92%;
+    }
+  }
+  @keyframes odontologia-estetica{
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 95%;
+    }
+  }
+  @keyframes harmonizacao-facial {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 97%;
+    }
+  }
   
   /* -----ABOUT----- */
   
@@ -865,6 +953,15 @@
       column-gap: 30px;
     }
 
+    /* ESPECIALIDADES */  
+
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: flex-end;
+      gap: 60px;
+    }
+
     /* -----DOCTOR----- */
   
     .scrollbar-item {min-width: calc(50% - 15px);}
@@ -1026,6 +1123,13 @@
     .service-list { grid-template-columns: repeat(3, 1fr); }
   
     .service-banner {
+      display: block;
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+      align-self: center;
+    }
+  
+    .skills-banner {
       display: block;
       grid-column: 2 / 3;
       grid-row: 1 / 4;
