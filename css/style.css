@@ -392,6 +392,7 @@
   }
 
   .skill-box {
+    padding: 0px 10px;
     margin-bottom: 10px;
   }
 
@@ -426,7 +427,7 @@
   }
 
   .skill-per.implantodontia {
-    width: 99%;
+    width: 94%;
     animation-delay: 0.3s;
   }
 
@@ -451,7 +452,7 @@
 
   .skill-per .tooltip {
     position: absolute;
-    right: -14px;
+    right: -12px;
     top: -28px;
     font-size: 9px;
     font-weight: 500;
@@ -590,7 +591,11 @@
   
   .cta { background-color: var(--color-primary-light); }
   
-  .cta-banner { margin-block-end: 50px; }
+  .cta-banner { 
+    margin-block-end: 50px; 
+    box-shadow: var(--shadow-4);
+    border-radius: var(--radius-4);
+  }
   
   .cta .section-subtitle { text-transform: capitalize; }
   
@@ -820,7 +825,7 @@
   
   .back-top-btn {
     position: fixed;
-    bottom: 50px;
+    bottom: 10px;
     right: 20px;
     background-color: var(--color-secondary-light);
     font-size: 18px;
@@ -830,6 +835,7 @@
     visibility: hidden;
     opacity: 0;
     transition: var(--transition);
+    z-index: 99;
   }
   
   .back-top-btn.active {
@@ -838,7 +844,7 @@
     opacity: 1;
   }
 
-  /* WHATSAPP */
+  WHATSAPP
 
   .btn-whatsapp {
     position: fixed;
