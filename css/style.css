@@ -371,7 +371,7 @@
 
   .service-card .card-link:is(:hover, :focus) { 
     color: var(--color-principal);
-    transform: scale(1.1); 
+    /* transform: scale(1.1);  */
   }
   
   .service-card .card-link:is(:hover, :focus)::after { background-color: var(--color-primary); }
@@ -389,7 +389,7 @@
 
   .service-card:is(:hover, :focus-within) { 
     background-color: var(--color-primary-light);
-    /* transform: scale(1.1);  */
+    transform: scale(1.1); 
   }
   
   .service-card .card-icon img {
