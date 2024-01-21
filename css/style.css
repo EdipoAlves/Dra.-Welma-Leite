@@ -371,7 +371,7 @@
 
   .service-card .card-link:is(:hover, :focus) { 
     color: var(--color-principal);
-    /* transform: scale(1.1);  */
+    transform: scale(1.1); 
   }
   
   .service-card .card-link:is(:hover, :focus)::after { background-color: var(--color-primary); }
@@ -711,7 +711,10 @@
   
   .blog-card .card-link:is(:hover, :focus)::after { background-color: var(--color-primary); }
 
-  .blog .btn { max-width: max-content; }
+  .blog .btn { 
+    max-width: max-content; 
+    margin-top: 15px;
+  }
 
   /* -----MODAL----- */
 
