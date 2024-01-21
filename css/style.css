@@ -877,44 +877,6 @@
     opacity: 1;
   }
 
-  WHATSAPP
-
-  .btn-whatsapp {
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    z-index: 99;
-
-    img {
-      max-width: 45px;
-      transition: 0.4s;
-    }
-
-    img:hover {
-      transform: scale(1.1);
-    }
-  }
-
-  .btn-whatsapp .tooltip-text {
-    visibility: hidden;
-    position: absolute;
-    width: 145px;
-    top: 0px;
-    left: -155px;
-    padding: 6px;
-    border-radius: 8px;
-    text-align: center;
-    background-color: var(--color-secondary-light);
-    color: var(--color-footer);
-    opacity: 0;
-    transition: opacity 0.9s;
-  }
-  
-  .btn-whatsapp:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-  }
-
   /* -----MEDIA QUERIES----- */
   
   /* -----575PX SCREEN----- */
