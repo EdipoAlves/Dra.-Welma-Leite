@@ -484,12 +484,12 @@
   .skill-per .tooltip {
     position: absolute;
     right: -12px;
-    top: -28px;
+    top: -22px;
     font-size: 9px;
     font-weight: 500;
     color: var(--white);
-    padding: 2px 6px;
-    border-radius: 3px;
+    padding: 2px 4px;
+    border-radius: var(--radius-4);
     background: var(--color-principal);
     z-index: 1;
   }
@@ -963,7 +963,7 @@
       bottom: 15px;
     }
   
-    .hero-banner {margin-inline-end: -60px;}
+    .hero-banner {margin-inline-end: -35px;}
   
     /* -----SERVICE----- */
   
