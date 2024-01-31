@@ -331,7 +331,15 @@
     margin-block-end: 15px;
   }
   
-  .hero-form .btn { width: 100%; }
+  .hero-form .btn {
+    display: flex;
+    align-items: center;
+    gap: 10px; width: 100%; 
+  }
+
+  .hero-form .btn ion-icon {
+    font-size: 20px;
+  }
   
   /* -----service----- */
   
@@ -525,10 +533,19 @@
   }
 
   .about .btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: unset;
     max-width: max-content;
     margin-block-start: 30px;
     padding-inline: 15px;
+  }
+
+  .about .btn ion-icon {
+    background-color: #1ab029;
+    padding: 5px;
+    border-radius: 50%;
   }
   
   /* -----DOCTOR----- */
@@ -636,8 +653,19 @@
     margin-block-end: 30px;
   }
   
-  .cta .btn { max-width: max-content; }
-  
+  .cta .btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: max-content; 
+  }
+
+  .cta .btn ion-icon {
+    background-color: #1ab029;
+    padding: 5px;
+    border-radius: 50%;
+  }
+
   /* -----BLOG----- */
   
   .blog .section-title { margin-block-end: 40px; }
