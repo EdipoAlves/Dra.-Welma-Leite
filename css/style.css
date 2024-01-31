@@ -941,9 +941,10 @@
   
     .hero .container {
       display: grid;
-      grid-template-columns: 1fr 0.75fr;
+      grid-template-columns: 1fr 1fr;
       align-items: center;
       gap: 20px;
+      padding-right: 33px;
     }
   
     .hero-content {margin-block-end: 0;}
@@ -1136,6 +1137,17 @@
       display: block;
       padding: 15px 20px;
     }
+
+    /* HERO */
+
+    .hero .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 20px;
+      padding-right: 40px;
+    }
+  
 
     /* -----SERVICE----- */
   
